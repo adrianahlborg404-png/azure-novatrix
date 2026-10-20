@@ -143,7 +143,7 @@ Kartan visar hela kedjan: från lokal dator och GitHub, via Entra ID, RBAC och d
 ## Struktur
 
 ```text
-Azure-novatrix-mov25/
+azure-novatrix/
 ├── README.md
 ├── docs/              Arkitekturkarta
 ├── v34/               Virtuell maskin och webbserver

@@ -1,7 +1,7 @@
 # v38 – Infrastructure as Code med ARM-templates
 
 **Kurs:** Microsoft Azure (MOV25) · **Vecka:** 38 · **Uppgift:** 5 av 8 · **Företag:** Novatrix AB
-**Repo:** <https://github.com/adrianahlborg404-png/Azure-novatrix-mov25>
+**Repo:** <https://github.com/adrianahlborg404-png/azure-novatrix>
 
 I tidigare veckor har Novatrix kundtjänst byggts upp steg för steg i Azure-portalen. Den här veckan beskrivs en del av miljön som kod. En ARM-template provisionerar lagringen för ärendeformuläret och nätverket runt det. Mallen är versionshanterad i GitHub och kan köras om när som helst, med samma resultat varje gång.
 
@@ -345,8 +345,8 @@ All deploy sker från **Azure Cloud Shell (Bash)**, direkt från repot.
 
 ```bash
 cd ~
-git clone https://github.com/adrianahlborg404-png/Azure-novatrix-mov25.git
-cd Azure-novatrix-mov25/v38
+git clone https://github.com/adrianahlborg404-png/azure-novatrix.git
+cd azure-novatrix/v38
 bash deploy.sh
 ```
 
@@ -451,7 +451,7 @@ VNet:et utökades med ett **privat subnät**, `snet-private` (`10.20.2.0/24`), f
 ### Förhandsgranskning och deploy av ändringen
 
 ```bash
-cd ~/Azure-novatrix-mov25 && git pull && cd v38 && bash deploy.sh
+cd ~/azure-novatrix && git pull && cd v38 && bash deploy.sh
 ```
 
 What-if visar att **bara VNet:et får en verklig ändring**: `snet-private` läggs till. NSG:n och storage-kontot är oförändrade (`= Nochange`).
@@ -512,8 +512,8 @@ Hela den kodade delen av miljön kan återskapas från repot, utan några steg i
 2. Klona repot och kör deploy-skriptet:
 
    ```bash
-   git clone https://github.com/adrianahlborg404-png/Azure-novatrix-mov25.git
-   cd Azure-novatrix-mov25/v38
+   git clone https://github.com/adrianahlborg404-png/azure-novatrix.git
+   cd azure-novatrix/v38
    bash deploy.sh
    ```
 

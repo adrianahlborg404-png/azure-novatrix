@@ -9,7 +9,7 @@ Mallen skapar ett storage account med containern `arenden`, en NSG med webbregel
 ## 🔧 Förutsättningar (kontrollera snabbt)
 
 - Du har ett Azure-konto med minst **Contributor**. Det har du haft sedan v34.
-- **Git** är installerat och ditt repo `Azure-novatrix-mov25` är klonat lokalt.
+- **Git** är installerat och ditt repo `azure-novatrix` är klonat lokalt.
 - Repot är **publikt** på GitHub.
 - Din **v34-VM** i `RG-novatrix` finns kvar. Den behövs för att visa formuläret i steg 3.
 
@@ -23,12 +23,12 @@ Du behöver ingen SSH-nyckel, IP-adress eller extra kvot.
 
 ```bash
 cd ~
-git clone https://github.com/adrianahlborg404-png/Azure-novatrix-mov25.git
-cd Azure-novatrix-mov25/v38
+git clone https://github.com/adrianahlborg404-png/azure-novatrix.git
+cd azure-novatrix/v38
 bash deploy.sh
 ```
 
-Har du klonat repot tidigare, kör i stället: `cd ~/Azure-novatrix-mov25 && git pull && cd v38 && bash deploy.sh`
+Har du klonat repot tidigare, kör i stället: `cd ~/azure-novatrix && git pull && cd v38 && bash deploy.sh`
 
 Skriptet skapar resursgruppen `rg-novatrix-iac` och kör **what-if**. Du ska se **5 resurser med `+ Create`**: storage account, blobService, container, NSG och VNet.
 
@@ -124,7 +124,7 @@ git push origin Master
 ### 4.3 Deploya ändringen i Cloud Shell
 
 ```bash
-cd ~/Azure-novatrix-mov25 && git pull && cd v38
+cd ~/azure-novatrix && git pull && cd v38
 bash deploy.sh
 ```
 
