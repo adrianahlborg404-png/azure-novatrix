@@ -23,7 +23,7 @@ Adrian Ahlborg — Novatrix AB
 | [**v34**](v34/README.md) | Virtuell maskin och webbserver | Ubuntu VM · Nginx | ✅ |
 | [**v35**](v35/README.md) | Entra ID och behörigheter | Entra ID · RBAC | ✅ |
 | [**v36**](v36/README.md) | Nätverk och säkerhet | VNet · Subnät · NSG | ✅ |
-| [**v37**](vecka37/README.md) | Lagring | Storage Account · Blob · Managed Identity | ✅ |
+| [**v37**](v37/README.md) | Lagring | Storage Account · Blob · Managed Identity | ✅ |
 | [**v38**](v38/README.md) | Infrastruktur som kod | ARM-mallar | ✅ |
 | [**v39**](v39/README.md) | Automation och integration | Power Automate · Microsoft 365 | ✅ |
 | [**v40**](v40/README.md) | VM, containers och serverless | serverless med Azure Function. | ✅ |
